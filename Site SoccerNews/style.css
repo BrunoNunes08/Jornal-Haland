@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    display: block;
+}
+
+body{
+    background-color: rgb(230, 230, 230);
+    background-size: 100%;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/fundo3.png);
+    height: 15vh;
+}
+
+.Perfil{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "item1 item2" 
+                         "item1 item3";
+    justify-content: center;
+    align-items: center;
+    height: 100%;;
+    padding: 10px;
+    column-gap: 10px;
+    margin-left: 12px;
+    /* cursor: pointer; */
+}
+
+#Saida{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#Engrenagem{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#Conta{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+.container-imagem1{
+    grid-area: item1;
+    justify-self: center;
+}
+
+.container-imagem3{
+    grid-area: item2;
+    justify-self: end;
+}
+
+.container-imagem2{
+    justify-self: start;
+    grid-area: item3;
+}
+
+
+.titulo-soccer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255) ;
+    font-size: 40px;
+    width: 1280px;
+    margin-right: 270px;
+    font-family: 'Belanosima', sans-serif;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
+    transition-property: transform;
+    transition-duration: 0,5s;
+}
+
+.titulo-soccer:hover{
+    transform: scale(1.04);
+    background-color: transparent;
+}
+
+.barra-pesquisa{
+    background-color: white;
+    border:solid 1px;
+    border-radius:10px;
+    width:300px;
+    height: 25px;
+    display: flex;
+    margin-left: 55px;
+    margin-top: 40px;
+}
+
+#lupa{
+    width: 17px;
+    height: 17px;
+    margin-top: 5px;
+    margin-right: 8px;
+}
+  
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:16px;
+    border:none;
+    height:25px;
+    width: 550px;
+}
+
+.noticia{
+    color: black;
+    background-color: white;
+    line-height: 30px;
+    font-size: 19px;
+    font-weight: 100px; 
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: justify;
+    width:65vw;
+}
+
+#haaland{
+    width: 550px;
+    height: 370px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+
+#haaland:hover{
+    transform: scale(1.04);
+    background-color: transparent;
+}   
+
+
+#manchete{
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px  gray;
+    font-size: 36px;
+    margin-top: 15px;
+    margin-left: 10px;
+    line-height: 40px;
+    font-family: 'Anton', sans-serif;
+    padding-top: 30px;
+}
+
+.idioma{
+    display: flex;
+    margin-top: 50px;
+    margin-right: 40px;
+}
+
+#linguagem{
+    width: 40px;
+    height: 20px;
+}
+
+#escrita_dois{
+    font-size: 22x;
+}
+
+#traducao{
+    border: none;
+    background-image: url(assets/bandeira-do-brasil.png);
+}
+
+
+#manchete{
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+#manchete:hover{
+    transform: scale(1.04);
+    background-color: transparent;
+}
